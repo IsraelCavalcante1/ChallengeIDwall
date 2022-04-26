@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Usuários</title>
+    </head>
+    <body>
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+
+            <div id="spinner1" class="spinner diagonal part-1"></div>
+            <div id="spinner2" class="spinner horizontal"></div>
+            <div id="spinner3" class="spinner diagonal part-2"></div>
+
+        </label>
+
+        <div id="sidebarMenu">
+            <nav class="navbar sidebarMenuInner">
+                <header class="header-navbar">
+                    <img class="logo" src=".//imagens/Logotipo idwall.svg" alt=""> <!-- Aqui será a logo-->
+                </header>
+                <ul>
+                    <a href="">
+                        <li><img class="menu-icon" src=".//imagens/ic_protocol.svg">Protocolo</li>
+                    </a>
+                    <a href="">
+                        <li><img class="menu-icon" src=".//imagens/ic_document.svg">Documento</li>
+                    </a>
+                    <a href="">
+                        <li class="menu-selected"><img class="menu-icon" src=".//imagens/ic_users.svg">Usuários</li>
+                    </a>
+                    <a href="">
+                        <li><img class="menu-icon" src=".//imagens/ic_fonts.svg">Fontes</li>
+                    </a>
+                    <a href="">
+                        <li><img class="menu-icon" src=".//imagens/ic_matrix.svg">Matrizes</li>
+                    </a>
+                    <a href="">
+                        <li><img class="menu-icon" src=".//imagens/ic_rules.svg">Regras</li>
+                    </a>
+                    <a href="">
+                        <li><img class="menu-icon" src=".//imagens/ic_attributes.svg">Atributos</li>
+                    </a>
+                    <a href="">
+                        <li><img class="menu-icon" src=".//imagens/ic_monitor.svg">Monitor</li>
+                    </a>
+                    <a href="">
+                        <li><img class="menu-icon" src=".//imagens/ic_organization.svg">Organizações</li>
+                    </a>
+                </ul>
+                <div class="logout">
+                    <span class="fa-solid fa-arrow-right-from-bracket logout-icon"> <a href="#"></span><span
+                        class="">Sair</span></a>
+                </div>
+            </nav>
+        </div>
+        <main class="main-content">
+            <header class="header-main-content">
+                <h2 class="header-main-content-description">Usuários</h2>
+            </header>
+
+            <div class="standalone-search-bar" id="search-bar">
+                <input type="text" placeholder="Busca por Usuário">
+            </div>
+
+            <div class="switch-container">
+                <p class="shablau">LISTAR SOMENTE USUÁRIOS DESATIVADOS</p>
+                <div class="switch-group">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="switch-container">
+                <p class="shablau">LISTAR ABERTOS RECENTEMENTE</p>
+                <div class="switch-group">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <section >
+                <div class="table-panel">
+                    <div class="button-container">
+                        <button type="button" class="pannel-button"><span><img src="imagens/ic_download.svg" /></span></button>
+                        <button type="button" class="pannel-button"><span><img src="imagens/ic_person.svg" /></span></button>    
+                    </div>
+                        <table class="user-table">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Empresa</th>
+                                <th>Cliente</th>
+                                <th>Protocolo</th>
+                                <th>Email</th>
+                                <th>Backoffice</th>
+                                <th>IDnetwork</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="borderless">
+                                <td colspan="7" class="borderless ">
+                                    <img class="icon-small" src="/imagens/ic_clock.svg">
+                                    <span class="labeled-row">Abertos recentemente</span></td>
+                            </tr> 
+                        <tr>
+                            <td><input type="checkbox" name="idCheckBox" value="checked"/>#4521</td>
+                            <td>Mercado Livre</td>
+                            <td>Gustavo</td>
+                            <td>64357</td>
+                            <td>sim</td>
+                            <td>não</td>
+                            <td>não</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="idCheckBox" value="checked"/>#1232</td>
+                            <td>Ifood</td>
+                            <td>Gustavo</td>
+                            <td>42312</td>
+                            <td>sim</td>
+                            <td>não</td>
+                            <td>não</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="idCheckBox" value="checked"/>#2321</td>
+                            <td>Casas Bahia</td>
+                            <td>Gustavo</td>
+                            <td>91232</td>
+                            <td>sim</td>
+                            <td>não</td>
+                            <td>não</td>
+                        </tr>
+                   
+                        <tr class="borderless">
+                            <td colspan="7" class="borderless"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="idCheckBox" value="checked"/>#5321</td>
+                            <td>Shopee</td>
+                            <td>Jessica</td>
+                            <td>63123</td>
+                            <td>sim</td>
+                            <td>sim</td>
+                            <td>sim</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="idCheckBox" value="checked"/>#7342</td>
+                            <td>Mercado Livre</td>
+                            <td>Rafaela</td>
+                            <td>53212</td>
+                            <td>sim</td>
+                            <td>não</td>
+                            <td>não</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="idCheckBox" value="checked"/>#5342</td>
+                            <td>Kabum</td>
+                            <td>Israel</td>
+                            <td>18293</td>
+                            <td>não</td>
+                            <td>sim</td>
+                            <td>sim</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="idCheckBox" value="checked"/>#7421</td>
+                            <td>Magazine Luiza</td>
+                            <td>Luiz</td>
+                            <td>53561</td>
+                            <td>sim</td>
+                            <td>sim</td>
+                            <td>não</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="idCheckBox" value="checked"/>#8532</td>
+                            <td>Amazon</td>
+                            <td>Marcela</td>
+                            <td>53212</td>
+                            <td>não</td>
+                            <td>não</td>
+                            <td>sim</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="idCheckBox" value="checked"/>#5347</td>
+                            <td>Americanas</td>
+                            <td>Matheus</td>
+                            <td>34652</td>
+                            <td>sim</td>
+                            <td>não</td>
+                            <td>sim</td>
+                        </tr>
+                        <tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <script src="./Javascript/menu-slide.js"></script>
+        <script src="https://kit.fontawesome.com/67f01a5142.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <script src="./Javascript/chart.js"></script>
+        <script src="./Javascript/search-slide.js"></script>
+    </body>
+</html>

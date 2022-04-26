@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/custom_table.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor</title>
+</head>
+
+<body>
+    <div class="container ">
+
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu"  id="sidebarIconToggle"class="sidebarIconToggle">
+
+            <div id="spinner1" class="spinner diagonal part-1"></div>
+            <div id="spinner2" class="spinner horizontal"></div>
+            <div id="spinner3" class="spinner diagonal part-2"></div>
+
+        </label>
+
+        <div id="sidebarMenu">
+
+            <nav class="navbar sidebarMenuInner">
+                <header class="header-navbar">
+                    <img class="logo" src=".//imagens/Logotipo idwall.svg" alt=""> <!-- Aqui será a logo-->
+                </header>
+                <ul>
+                    <a href="">
+                        <li><img class="menu-icon" src=".//imagens/ic_protocol.svg">Protocolo</li>
+                    </a>
+                    <a href="">
+                        <li><img class="menu-icon" src=".//imagens/ic_document.svg">Documento</li>
+                    </a>
+                    <a href="">
+                        <li><img class="menu-icon" src=".//imagens/ic_users.svg">Usuários</li>
+                    </a>
+                    <a href="">
+                        <li><img class="menu-icon" src=".//imagens/ic_fonts.svg">Fontes</li>
+                    </a>
+                    <a href="">
+                        <li><img class="menu-icon" src=".//imagens/ic_matrix.svg">Matrizes</li>
+                    </a>
+                    <a href="">
+                        <li><img class="menu-icon" src=".//imagens/ic_rules.svg">Regras</li>
+                    </a>
+                    <a href="">
+                        <li><img class="menu-icon" src=".//imagens/ic_attributes.svg">Atributos</li>
+                    </a>
+                    <a href="">
+                        <li  class="menu-selected"><img class="menu-icon" src=".//imagens/ic_monitor.svg">Monitor</li>
+                    </a>
+                    <a href="">
+                        <li><img class="menu-icon" src=".//imagens/ic_organization.svg">Organizações</li>
+                    </a>
+                </ul>
+                <div class="logout">
+                    <span class="fa-solid fa-arrow-right-from-bracket logout-icon"> <a href="#"></span><span
+                        class="">Sair</span></a>
+                </div>
+            </nav>
+        </div>
+
+        <main class="main-content">
+            <header class="header-main-content">
+                <h2 class="header-main-content-description">Monitor</h2>
+            </header>
+            <section>
+                <div class="btn-status"><a href="#open-modal">
+                    <div class="status">
+                        <i class="fa-solid fa-triangle-exclamation status-icon">
+                            <span class="status-text">Disponibilidade de Serviços</span></i>
+                    </div>
+                </a></div>
+                <div id="open-modal" class="modal-window">
+                    <div>
+                        <a href="#" title="Close" class="modal-close">Fechar</a>
+                        <h1>Serviços que não estão disponíveis: </h1>
+                        <p>🔴 AntecedentesCE</p>
+                        <p>🔴 AntecedentesDF</p>
+                        <p>🔴 AntecedentesMT</p>
+                        <p>🔴 AntecedentesRO</p>
+                        <p>🔴 AntecedentesTO</p>
+                        <p>🔴 CADICON</p>
+                        <p>🔴 InfraçõesDetranCE</p>
+                        <p>🔴 InfraçõesDetranPI</p>
+                        <p>🔴 InfraçõesDetranSE</p>
+                        <p>🔴 InfraçõesPrefeituraSP</p>
+                        <p>🔴 InfraçõesRS</p>
+                        <p>🔴 JuntaComercialDF</p>
+                        <p>🔴 MultasPoliciaRodoviariaFederal</p>
+                        <p>🔴 NovoAntecedentesMT</p>
+                        <p>🔴 RestituiçãoReceitaFederal</p>
+                        <p>🔴 SIAFI</p>
+                        <p>🔴 SSDMEC</p>
+                        <p>🔴 VeiculosDetranSP</p>
+                    </div>
+                </div>
+
+            </section>
+            <section id="container-main-content"class="container-main-content">
+
+                <header class="header-container-main-content">
+                    <div class="search-bar" id="search-bar">
+                        <input type="text" placeholder="Busque por protocolos">
+                    </div>
+                    <div class="header-align">
+                        <span class="header-container-text">Protocolos</span>
+                    </div>
+                </header>
+
+                <div class="tab-protocol">
+                    <div id="tab1"class="text-protocol tab-selected">Resumo Geral</div>
+                    <div id="tab2"class="text-protocol">Lista de Protocolos</div>
+                </div>
+
+                <!-- Tab Resumo Geral -->
+                <div class="chart-container chart-status">
+                    <div class="details-protocol chart-status">
+                        <span>325</span>
+                    </div>
+                    <div class="content-chart chart-status">
+                        <div id="chart" class="chart-status"></div>
+                        <span class="description-chart chart-status">Pré Processamento</span>
+                    </div>
+
+
+                    <div class="details-protocol details-process chart-status">
+                        <span>100 / 125</span>
+                    </div>
+                    <div class="content-chart chart-status">
+                        <div id="chart2" class="chart-status"></div>
+                        <span class="description-chart chart-status">Processamento</span>
+                    </div>
+                </div>
+
+                <!--Tab Lista de Protocolos-->
+                                <div id="table-list">
+                                    <table id="table-status" class="tab-inactive">
+                                        <thead>
+                                            <tr>
+                                                <th class="inactive-table">Código</th>
+                                                <th class="inactive-table">Nome da Empresa</th>
+                                                <th>Protocolos Pré Processados</th>
+                                                <th>Protocolos em Processamento</th>
+                                                <th>Protocolos Processados</th>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <td class="inactive-table">#021</td>
+                                            <td class="inactive-table">Ifood</td>
+                                            <td>46</td>
+                                            <td>14</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="inactive-table">#023</td>
+                                            <td class="inactive-table">Mercado Livre</td>
+                                            <td>86</td>
+                                            <td>14</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="inactive-table">#025</td>
+                                            <td class="inactive-table">Ponto Frio</td>
+                                            <td>6</td>
+                                            <td>14</td>
+                                            <td>16</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="inactive-table">#027</td>
+                                            <td class="inactive-table">Americanas</td>
+                                            <td>76</td>
+                                            <td>14</td>
+                                            <td>19</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="inactive-table">#307</td>
+                                            <td class="inactive-table">Bradesco</td>
+                                            <td>16</td>
+                                            <td>14</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="inactive-table">#402</td>
+                                            <td class="inactive-table">Localiza</td>
+                                            <td>66</td>
+                                            <td>14</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="inactive-table">#427</td>
+                                            <td class="inactive-table">Loggi</td>
+                                            <td>14</td>
+                                            <td>10</td>
+                                            <td>14</td>
+                                        </tr>
+
+                                    </table>
+                                </div>
+
+            </section>
+            <section class="consultas-content">
+
+                <header class="header-container-main-content">
+                    <div class="search-bar" id="search-bar2">
+                        <input type="text" placeholder="Busque por consultas em análise">
+                    </div>
+                    <div class="header-align">
+                        <span class="header-container-text">Consultas em Análise</span>
+                    </div>
+                </header>
+                <div class="table-consultas">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Quantidade de Serviços</th>
+                                <th>Nome do Serviço</th>
+
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>#031</td>
+                            <td>321</td>
+                            <td>ProcessosTJSE</td>
+
+                        </tr>
+                        <tr>
+                            <td>#432</td>
+                            <td>324</td>
+                            <td>AntecedentesTRF</td>
+
+                        </tr>
+                        <tr>
+                            <td>#645</td>
+                            <td>3213</td>
+                            <td>FaceMatch</td>
+
+                        </tr>
+                        <tr>
+                            <td>#343</td>
+                            <td>1234</td>
+                            <td>EntidadeRNTRC</td>
+
+                        </tr>
+                        <tr>
+                            <td>#653</td>
+                            <td>76</td>
+                            <td>DividaFazenda</td>
+
+                        </tr>
+                        <tr>
+                            <td>#436</td>
+                            <td>123</td>
+                            <td>ProcessosTJRS</td>
+
+                        </tr>
+                        <tr>
+                            <td>#427</td>
+                            <td>432</td>
+                            <td>ProcessosTRJCE</td>
+
+                        </tr>
+                        <tr>
+                            <td>#385</td>
+                            <td>983</td>
+                            <td>ProcessosSTJ</td>
+
+                        </tr>
+                        <tr>
+                            <td>#234</td>
+                            <td>234</td>
+                            <td>RegularidadeCaixa</td>
+
+                        </tr>
+                        <tr>
+                            <td>#753</td>
+                            <td>98</td>
+                            <td>ProcessosTJAL</td>
+
+                        </tr>
+                       
+                    </table>
+                </div>
+            </section>
+
+    </div>
+    <script src="./Javascript/tab.js"></script>
+
+    <script src="./Javascript/menu-slide.js"></script>
+    <script src="https://kit.fontawesome.com/67f01a5142.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./Javascript/chart.js"></script>
+    <script src="./Javascript/search-slide.js"></script>
+
+
+
+</body>
+
+</html>
